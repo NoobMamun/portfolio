@@ -1,0 +1,24 @@
+/* Custom smooth animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom Skill Progress Bar Style */
+.skill-bar {
+    height: 8px;
+    background: #1e293b;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #a855f7);
+    width: 0%; /* Animated via JS */
+    transition: width 1.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
